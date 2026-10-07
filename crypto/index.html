@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<title>Cryptography Lectures | Yu-Chi Chen</title>
+	<meta name="robots" content="noindex" />
+	<meta name="theme-color" content="#f3f5fa" />
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0F2E'/%3E%3Ctext x='16' y='21.5' font-family='monospace' font-size='14' font-weight='700' fill='%2338BDF8' text-anchor='middle'%3EYC%3C/text%3E%3C/svg%3E" />
+	<script src="../assets/js/boot.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" />
+	<link rel="stylesheet" href="../assets/vendor/fontawesome/css/fontawesome.min.css" />
+	<link rel="stylesheet" href="../assets/vendor/fontawesome/css/solid.min.css" />
+	<link rel="stylesheet" href="../assets/vendor/fontawesome/css/brands.min.css" />
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<style>
+		/* 只有這頁用：依 data-lang 顯示對應語言 */
+		[data-l] { display: none; }
+		html[data-lang="en"] [data-l="en"], html[data-lang="zh"] [data-l="zh"], html[data-lang="ja"] [data-l="ja"] { display: revert; }
+
+		.crypto { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+		.crypto .back { display: inline-flex; align-items: center; gap: 8px; font-size: 0.86rem; font-weight: 600; margin-bottom: 28px; }
+		.crypto .page-head p { margin-left: 58px; }
+		.lectures { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+		.lectures a {
+			display: flex; align-items: center; gap: 10px; height: 48px; padding: 0 14px;
+			border: 1px solid var(--line-2); border-radius: var(--r-sm); background: var(--surface);
+			font: 600 0.9rem var(--mono); color: var(--ink);
+		}
+		.lectures a i { color: #e62117; font-size: 1.05rem; }
+		.lectures a:hover { border-color: var(--primary); color: var(--primary); text-decoration: none; }
+		@media (max-width: 600px) { .crypto .page-head p { margin-left: 0; } }
+	</style>
+</head>
+<body>
+	<main class="crypto">
+		<a class="back" href="../#/teaching"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span data-l="en">Back to Teaching</span><span data-l="zh">回到課程</span><span data-l="ja">担当授業へ戻る</span></a>
+
+		<header class="page-head">
+			<h2><span class="ph-icon"><i class="fa-solid fa-key" aria-hidden="true"></i></span><span data-l="en">Cryptography</span><span data-l="zh">密碼學</span><span data-l="ja">暗号学</span></h2>
+			<p><span data-l="en">Lecture video playlists on YouTube.</span><span data-l="zh">課程影片（YouTube 播放清單）。</span><span data-l="ja">授業動画（YouTube 再生リスト）。</span></p>
+		</header>
+
+		<section class="card">
+			<ul class="lectures">
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLU2EvCHBGD4D3RfuLXMCNNY" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L1</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLVpb9Lbbo5toMnfsWR2OT9Y" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L2</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLVhmE15eIDISXhrMKY4-7Qj" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L3</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLW5j450XFAffhWsTSKmnHNX" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L4</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLVohRFHscd1QJVnFya1dVI2" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L5-1</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLWKetk3084cLk3SHYou_p_v" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L5-2</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLXenR3KawXF_8QrBDzWOYTm" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L6</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLWcl3g5vyWFoK_8P7_iW-Q7" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L7</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLW8Lm1vSZ_8wB-TPqwoKs6Y" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L8</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLX0G33X2BT2o6YQ0mB5oHMb" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L9</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLXaZDsU1wz-uQaDerbp70zJ" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L10</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLXHYvUZh1J6ISv7nwaPk94E" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L11</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLW403viY5a4IFOj5dadWjEB" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L12</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLY5cA9i1xtLXZRkfV3hNErr9zhwDcuun8" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i>L13</a></li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>

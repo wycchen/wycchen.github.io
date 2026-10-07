@@ -36,7 +36,7 @@
 			'lead.publications': 'Representative journal articles, conference papers, patents and preprints.',
 			'lead.projects': 'Representative funded research projects and lab research directions.',
 			'lead.honors': 'Selected awards, fellowships and recognitions.',
-			'lead.teaching': 'Courses taught over the years.', 'sec.videos': 'Course videos',
+			'lead.teaching': 'Courses taught over the years.',
 			'lead.news': 'All announcements, newest first.',
 			'lead.contact': 'The fastest way to reach me is by email.',
 			'period.label': 'Period', 'period.3': '3 years', 'period.5': '5 years', 'period.all': 'All',
@@ -72,7 +72,7 @@
 			'lead.publications': '代表性的期刊、研討會論文、專利與預印本。',
 			'lead.projects': '代表性的研究計畫與實驗室研究方向。',
 			'lead.honors': '精選的獲獎、獎助與榮譽。',
-			'lead.teaching': '歷年開設課程。', 'sec.videos': '課程影片',
+			'lead.teaching': '歷年開設課程。',
 			'lead.news': '全部公告，由新到舊。',
 			'lead.contact': '最快的聯絡方式是寄電子郵件。',
 			'period.label': '期間', 'period.3': '近 3 年', 'period.5': '近 5 年', 'period.all': '全部',
@@ -108,7 +108,7 @@
 			'lead.publications': '代表的な学術論文、国際会議論文、特許、プレプリント。',
 			'lead.projects': '代表的な研究助成プロジェクトと研究室の研究テーマ。',
 			'lead.honors': '主な受賞、フェローシップ、表彰。',
-			'lead.teaching': 'これまでの担当授業。', 'sec.videos': '授業動画',
+			'lead.teaching': 'これまでの担当授業。',
 			'lead.news': 'すべてのお知らせ（新しい順）。',
 			'lead.contact': 'ご連絡はメールが最も確実です。',
 			'period.label': '期間', 'period.3': '直近3年', 'period.5': '直近5年', 'period.all': 'すべて',
@@ -493,21 +493,6 @@
 		}).catch(function (e) { showError(el, e); });
 	}
 
-	/* 課程影片：「## 課程名稱」底下每行「- [標籤](網址)」，接在課程頁的課表下方 */
-	function videosView(el) {
-		loadContent('videos').then(function (src) {
-			var parts = stripComments(src).split(/^##\s+/m).slice(1);
-			if (!parts.length) return;
-			el.innerHTML = '<section class="videos"><h3 class="bento-title"><i class="fa-brands fa-youtube" aria-hidden="true"></i>' + esc(t('sec.videos')) + '</h3>' +
-				parts.map(function (p) {
-					var nl = p.indexOf('\n');
-					var head = (nl < 0 ? p : p.slice(0, nl)).trim(), body = nl < 0 ? '' : p.slice(nl + 1).trim();
-					return card('c-videos', mdInline(head), '<div class="video-list">' + md(body) + '</div>');
-				}).join('') + '</section>';
-			externalLinks(el);
-		}).catch(function () {});
-	}
-
 	/* =========================================================
 	 * 各頁
 	 * ========================================================= */
@@ -604,11 +589,7 @@
 		publications: function (view) { view.innerHTML = pageHead('publications', 'fa-book-open') + linksRow() + '<div id="c"></div>'; collectionView('publications', $('#c')); },
 		projects: function (view) { view.innerHTML = pageHead('projects', 'fa-diagram-project') + '<div id="c"></div>'; collectionView('projects', $('#c')); },
 		honors: function (view) { view.innerHTML = pageHead('honors', 'fa-award') + '<div id="c"></div>'; collectionView('honors', $('#c')); },
-		teaching: function (view) {
-			view.innerHTML = pageHead('teaching', 'fa-chalkboard-user') + '<div id="c"></div><div id="v"></div>';
-			collectionView('teaching', $('#c'));
-			videosView($('#v'));
-		},
+		teaching: function (view) { view.innerHTML = pageHead('teaching', 'fa-chalkboard-user') + '<div id="c"></div>'; collectionView('teaching', $('#c')); },
 
 		news: function (view, slug) {
 			view.innerHTML = pageHead('news', 'fa-bullhorn') + '<div id="c">' + loading() + '</div>';

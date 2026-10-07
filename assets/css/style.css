@@ -599,19 +599,6 @@ details[open] .caret { transform: rotate(180deg); }
 .btn.is-disabled { opacity: 0.45; pointer-events: none; }
 .c-cv p { margin: 0 0 14px; color: var(--muted); font-size: 0.9rem; }
 
-/* ---------- Course videos ---------- */
-
-.videos { margin-top: 28px; }
-.videos .bento-title { display: flex; align-items: center; gap: 8px; }
-.videos .bento-title i { color: var(--cyan-ink); }
-.videos .card + .card { margin-top: 12px; }
-.video-list ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.video-list a {
-	display: inline-flex; align-items: center; height: 34px; padding: 0 13px;
-	border: 1px solid var(--line-2); border-radius: var(--r-sm);
-	font: 600 0.84rem var(--mono); color: var(--ink);
-}
-.video-list a:hover { border-color: var(--primary); color: var(--primary); text-decoration: none; }
 
 /* ---------- Toast（彩蛋提示） ---------- */
 
