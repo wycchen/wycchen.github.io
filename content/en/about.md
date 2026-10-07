@@ -1,0 +1,1 @@
+I am a Professor at the Department of Computer Science and Information Engineering, National Taipei University of Technology (Taipei Tech), where I lead the Crypto and Information Security Lab. My research interests include cryptography and information security; recently I also focus on blockchain techniques and privacy-preserving machine learning.

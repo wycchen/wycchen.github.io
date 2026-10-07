@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>News</title>
+	<meta name="robots" content="noindex" />
+	<!-- 舊網址相容：news.html#slug → index.html#/news/slug -->
+	<script>
+		var s = location.hash.replace(/^#/, '');
+		location.replace('index.html#/news' + (s ? '/' + s : ''));
+	</script>
+	<meta http-equiv="refresh" content="0; url=index.html#/news" />
+</head>
+<body><a href="index.html#/news">News</a></body>
+</html>
