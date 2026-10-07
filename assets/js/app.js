@@ -21,10 +21,10 @@
 			'nav.overview': 'Overview', 'nav.publications': 'Publications', 'nav.projects': 'Projects',
 			'nav.honors': 'Honors', 'nav.teaching': 'Teaching', 'nav.news': 'News', 'nav.contact': 'Contact',
 			'ui.langSwitch': 'Language', 'ui.themeSwitch': 'Toggle dark mode',
-			'ui.cv': 'Download CV', 'ui.cvMissing': 'CV not uploaded yet', 'ui.email': 'Email', 'ui.icons': 'Icons',
+			'ui.cv': 'Download CV', 'ui.cvMissing': 'CV not uploaded yet', 'ui.email': 'Email',
 			'ui.loading': 'Loading…', 'ui.loadError': 'This content could not be loaded.',
 			'ui.localHint': 'Previewing from a local file? Run a local server (see README).',
-			'ui.ongoing': 'Ongoing', 'ui.present': 'present', 'ui.pinned': 'Pinned',
+			'egg.cardAlt': 'Legendary card: Yu-Chi Chen, “Group Meet Tomorrow”', 'egg.cardHint': 'Tap the card to flip · Esc to close', 'ui.close': 'Close', 'egg.decrypted': 'Decrypted: “Cryptography”. You cracked the hex! 🔓', 'ui.ongoing': 'Ongoing', 'ui.present': 'present', 'ui.pinned': 'Pinned',
 			'ui.allNews': 'All announcements', 'ui.noNews': 'No announcements yet.',
 			'ui.notFound': 'This page does not exist.', 'ui.home': 'Back to overview',
 			'sec.about': 'About', 'sec.research': 'Research', 'sec.news': 'Latest news',
@@ -36,7 +36,7 @@
 			'lead.publications': 'Representative journal articles, conference papers, patents and preprints.',
 			'lead.projects': 'Representative funded research projects and lab research directions.',
 			'lead.honors': 'Selected awards, fellowships and recognitions.',
-			'lead.teaching': 'Courses taught over the years.',
+			'lead.teaching': 'Courses taught over the years.', 'sec.videos': 'Course videos',
 			'lead.news': 'All announcements, newest first.',
 			'lead.contact': 'The fastest way to reach me is by email.',
 			'period.label': 'Period', 'period.3': '3 years', 'period.5': '5 years', 'period.all': 'All',
@@ -57,10 +57,10 @@
 			'nav.overview': '總覽', 'nav.publications': '著作', 'nav.projects': '計畫',
 			'nav.honors': '榮譽', 'nav.teaching': '課程', 'nav.news': '公告', 'nav.contact': '聯絡',
 			'ui.langSwitch': '語言', 'ui.themeSwitch': '切換深色模式',
-			'ui.cv': '下載履歷', 'ui.cvMissing': '履歷尚未上傳', 'ui.email': '寄信', 'ui.icons': '圖示',
+			'ui.cv': '下載履歷', 'ui.cvMissing': '履歷尚未上傳', 'ui.email': '寄信',
 			'ui.loading': '載入中…', 'ui.loadError': '內容載入失敗。',
 			'ui.localHint': '若直接開啟本機檔案，請改用本機伺服器預覽（見 README）。',
-			'ui.ongoing': '進行中', 'ui.present': '至今', 'ui.pinned': '置頂',
+			'egg.cardAlt': '傳說級卡片：陳昱圻「明天要 Group Meet」', 'egg.cardHint': '點卡片翻面 · 按 Esc 關閉', 'ui.close': '關閉', 'egg.decrypted': '解密成功：「Cryptography」，你破解了這串十六進位！🔓', 'ui.ongoing': '進行中', 'ui.present': '至今', 'ui.pinned': '置頂',
 			'ui.allNews': '全部公告', 'ui.noNews': '目前沒有公告。',
 			'ui.notFound': '找不到這個頁面。', 'ui.home': '回到總覽',
 			'sec.about': '關於', 'sec.research': '研究領域', 'sec.news': '最新消息',
@@ -72,7 +72,7 @@
 			'lead.publications': '代表性的期刊、研討會論文、專利與預印本。',
 			'lead.projects': '代表性的研究計畫與實驗室研究方向。',
 			'lead.honors': '精選的獲獎、獎助與榮譽。',
-			'lead.teaching': '歷年開設課程。',
+			'lead.teaching': '歷年開設課程。', 'sec.videos': '課程影片',
 			'lead.news': '全部公告，由新到舊。',
 			'lead.contact': '最快的聯絡方式是寄電子郵件。',
 			'period.label': '期間', 'period.3': '近 3 年', 'period.5': '近 5 年', 'period.all': '全部',
@@ -93,10 +93,10 @@
 			'nav.overview': '概要', 'nav.publications': '論文・著作', 'nav.projects': '研究プロジェクト',
 			'nav.honors': '受賞', 'nav.teaching': '担当授業', 'nav.news': 'お知らせ', 'nav.contact': '連絡先',
 			'ui.langSwitch': '言語', 'ui.themeSwitch': 'ダークモード切替',
-			'ui.cv': '履歴書をダウンロード', 'ui.cvMissing': '履歴書は未掲載です', 'ui.email': 'メール', 'ui.icons': 'アイコン',
+			'ui.cv': '履歴書をダウンロード', 'ui.cvMissing': '履歴書は未掲載です', 'ui.email': 'メール',
 			'ui.loading': '読み込み中…', 'ui.loadError': 'コンテンツを読み込めませんでした。',
 			'ui.localHint': 'ローカルファイルを直接開いている場合は、ローカルサーバーでプレビューしてください（README 参照）。',
-			'ui.ongoing': '進行中', 'ui.present': '現在', 'ui.pinned': '固定',
+			'egg.cardAlt': 'レジェンドカード：陳昱圻「明日は Group Meet」', 'egg.cardHint': 'カードをタップで裏返す · Esc で閉じる', 'ui.close': '閉じる', 'egg.decrypted': '復号成功：「Cryptography」。16 進数を解読しました！🔓', 'ui.ongoing': '進行中', 'ui.present': '現在', 'ui.pinned': '固定',
 			'ui.allNews': 'すべてのお知らせ', 'ui.noNews': 'お知らせはまだありません。',
 			'ui.notFound': 'このページは存在しません。', 'ui.home': '概要に戻る',
 			'sec.about': 'プロフィール', 'sec.research': '研究分野', 'sec.news': '最新情報',
@@ -108,7 +108,7 @@
 			'lead.publications': '代表的な学術論文、国際会議論文、特許、プレプリント。',
 			'lead.projects': '代表的な研究助成プロジェクトと研究室の研究テーマ。',
 			'lead.honors': '主な受賞、フェローシップ、表彰。',
-			'lead.teaching': 'これまでの担当授業。',
+			'lead.teaching': 'これまでの担当授業。', 'sec.videos': '授業動画',
 			'lead.news': 'すべてのお知らせ（新しい順）。',
 			'lead.contact': 'ご連絡はメールが最も確実です。',
 			'period.label': '期間', 'period.3': '直近3年', 'period.5': '直近5年', 'period.all': 'すべて',
@@ -493,6 +493,21 @@
 		}).catch(function (e) { showError(el, e); });
 	}
 
+	/* 課程影片：「## 課程名稱」底下每行「- [標籤](網址)」，接在課程頁的課表下方 */
+	function videosView(el) {
+		loadContent('videos').then(function (src) {
+			var parts = stripComments(src).split(/^##\s+/m).slice(1);
+			if (!parts.length) return;
+			el.innerHTML = '<section class="videos"><h3 class="bento-title"><i class="fa-brands fa-youtube" aria-hidden="true"></i>' + esc(t('sec.videos')) + '</h3>' +
+				parts.map(function (p) {
+					var nl = p.indexOf('\n');
+					var head = (nl < 0 ? p : p.slice(0, nl)).trim(), body = nl < 0 ? '' : p.slice(nl + 1).trim();
+					return card('c-videos', mdInline(head), '<div class="video-list">' + md(body) + '</div>');
+				}).join('') + '</section>';
+			externalLinks(el);
+		}).catch(function () {});
+	}
+
 	/* =========================================================
 	 * 各頁
 	 * ========================================================= */
@@ -589,7 +604,11 @@
 		publications: function (view) { view.innerHTML = pageHead('publications', 'fa-book-open') + linksRow() + '<div id="c"></div>'; collectionView('publications', $('#c')); },
 		projects: function (view) { view.innerHTML = pageHead('projects', 'fa-diagram-project') + '<div id="c"></div>'; collectionView('projects', $('#c')); },
 		honors: function (view) { view.innerHTML = pageHead('honors', 'fa-award') + '<div id="c"></div>'; collectionView('honors', $('#c')); },
-		teaching: function (view) { view.innerHTML = pageHead('teaching', 'fa-chalkboard-user') + '<div id="c"></div>'; collectionView('teaching', $('#c')); },
+		teaching: function (view) {
+			view.innerHTML = pageHead('teaching', 'fa-chalkboard-user') + '<div id="c"></div><div id="v"></div>';
+			collectionView('teaching', $('#c'));
+			videosView($('#v'));
+		},
 
 		news: function (view, slug) {
 			view.innerHTML = pageHead('news', 'fa-bullhorn') + '<div id="c">' + loading() + '</div>';
@@ -786,6 +805,8 @@
 
 	/* =========================================================
 	 * 側欄背景：密文矩陣（其中一行是「Cryptography」的十六進位編碼）
+	 * 其餘數字會隨機跳動，高亮的那一行固定不動。
+	 * 彩蛋：把高亮那行解碼後在鍵盤上打出來（cryptography），矩陣就會解密。
 	 * ========================================================= */
 	var cipher = null;
 	function initCipher() {
@@ -794,7 +815,8 @@
 		var ctx = canvas.getContext('2d');
 		var HEX = '0123456789ABCDEF';
 		var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-		var seed, grid = [], cols, rows, cw, ch, secret, secretRow, start = 0, wide = false;
+		var seed, grid = [], cols, rows, cw, ch, secret, secretRow, start = 0, wide = false, decoded = false;
+		var PLAIN = 'Cryptography', startCol = 1;
 		function rnd() { seed = (seed * 16807) % 2147483647; return seed / 2147483647; }
 
 		function build() {
@@ -822,7 +844,6 @@
 			ctx.clearRect(0, 0, rect.width, h);
 			var cs = getComputedStyle(root);
 			var base = cs.getPropertyValue('--cipher').trim(), hi = cs.getPropertyValue('--cipher-hi').trim();
-			var startCol = 1;
 			for (var r = 0; r < rows; r++) {
 				// 由下往上淡出
 				var y = r * ch + ch, fs0 = wide ? 0.6 : 0.42, fade = Math.max(0, (y / h - fs0) / (1 - fs0)) * (wide ? 0.7 : 1);
@@ -833,7 +854,7 @@
 					if (p < 1 && Math.random() > p) txt = HEX[Math.floor(Math.random() * 16)] + HEX[Math.floor(Math.random() * 16)];
 					if (isSecret && p >= 1) {
 						ctx.fillStyle = 'rgba(' + hi + ',' + (0.55 + 0.4 * fade).toFixed(3) + ')';
-						txt = secret[c - startCol];
+						txt = decoded ? PLAIN[c - startCol] : secret[c - startCol];
 					} else {
 						ctx.fillStyle = 'rgba(' + base + ',' + (0.2 * fade).toFixed(3) + ')';
 					}
@@ -845,13 +866,132 @@
 			if (!start) start = ts;
 			var p = Math.min(1, (ts - start) / 1200);
 			draw(p);
-			if (p < 1) requestAnimationFrame(animate);
+			if (p < 1) requestAnimationFrame(animate); else start = 0;
 		}
+		var animUntil = 0;
+		function play() {
+			start = 0; animUntil = Date.now() + 1300;
+			requestAnimationFrame(animate);
+		}
+		// 隨機跳動：每次換掉少量格子（高亮行不在 draw 裡讀 grid，所以不會動）
+		function flicker() {
+			if (document.hidden || Date.now() < animUntil || !rows) return;
+			var n = Math.max(3, Math.round(rows * cols * 0.03));
+			for (var i = 0; i < n; i++) {
+				var r = Math.floor(Math.random() * rows), c = Math.floor(Math.random() * cols);
+				grid[r][c] = HEX[Math.floor(Math.random() * 16)] + HEX[Math.floor(Math.random() * 16)];
+			}
+			draw(1);
+		}
+		function decrypt() {
+			decoded = !decoded;
+			if (reduce) draw(1); else play();
+			if (decoded) toast(t('egg.decrypted'));
+			console.info('%c' + secret.join(' ') + '  →  ' + PLAIN, 'color:#38bdf8;font-family:monospace');
+		}
+		var typed = '';
+		document.addEventListener('keydown', function (e) {
+			if (e.ctrlKey || e.metaKey || e.altKey || e.key.length !== 1) return;
+			if (e.target.closest && e.target.closest('input, textarea, select, [contenteditable]')) return;
+			typed = (typed + e.key.toLowerCase()).slice(-PLAIN.length);
+			if (typed === PLAIN.toLowerCase()) { typed = ''; decrypt(); }
+		});
 		build();
-		if (reduce) draw(1); else requestAnimationFrame(animate);
+		console.info('%c' + secret.join(' '), 'color:#38bdf8;font-family:monospace', '← decode me, then type it anywhere on this page.');
+		if (reduce) draw(1); else { play(); setInterval(flicker, 140); }
 		var to;
 		window.addEventListener('resize', function () { clearTimeout(to); to = setTimeout(function () { build(); draw(1); }, 150); });
 		cipher = { redraw: function () { build(); draw(1); } };
+	}
+
+	/* =========================================================
+	 * 彩蛋：連點頭像三下，像抽卡一樣抽出「明天要 Group Meet」卡
+	 * 卡片會閃（全息反光，滑鼠／手指移動時跟著傾斜），點卡片可翻面
+	 * ========================================================= */
+	var CARD_IMG = 'images/card_group_meet.webp';
+	function initCardEgg() {
+		var photo = $('.profile-photo');
+		if (!photo) return;
+		var taps = [];
+		photo.addEventListener('click', function (e) {
+			var now = Date.now();
+			taps = taps.filter(function (x) { return now - x < 700; });
+			taps.push(now);
+			if (taps.length === 1) new Image().src = CARD_IMG; // 先預載
+			if (taps.length >= 3) { taps = []; e.preventDefault(); openCard(photo); }
+		});
+	}
+	function openCard(opener) {
+		if ($('.card-egg')) return;
+		var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+		var hex = Array.prototype.map.call('Cryptography', function (c) { return c.charCodeAt(0).toString(16).toUpperCase(); }).join(' ');
+		var el = document.createElement('div');
+		el.className = 'card-egg';
+		el.setAttribute('role', 'dialog');
+		el.setAttribute('aria-modal', 'true');
+		el.setAttribute('aria-label', t('egg.cardAlt'));
+		el.innerHTML = '<div class="ce-rays" aria-hidden="true"></div>' +
+			'<button type="button" class="ce-card is-back" aria-label="' + esc(t('egg.cardHint')) + '">' +
+				'<span class="ce-flip">' +
+					'<span class="ce-face ce-front"><img src="' + CARD_IMG + '" alt="' + esc(t('egg.cardAlt')) + '" draggable="false" /><span class="ce-holo"></span><span class="ce-glare"></span></span>' +
+					'<span class="ce-face ce-back"><span class="ce-back-ring"><img src="images/cislab-mark.svg" alt="" draggable="false" /></span>' +
+						'<img class="ce-back-name" src="images/cislab-wordmark.png" alt="CIS Lab" draggable="false" />' +
+						'<span class="ce-back-hex">' + hex + '</span><span class="ce-holo"></span><span class="ce-glare"></span></span>' +
+				'</span>' +
+			'</button>' +
+			'<p class="ce-hint">' + esc(t('egg.cardHint')) + '</p>' +
+			'<button type="button" class="ce-close" aria-label="' + esc(t('ui.close')) + '"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>';
+		document.body.appendChild(el);
+		root.classList.add('is-locked');
+		var card = $('.ce-card', el);
+
+		// 抽卡：背面朝上飛進來，停穩後翻到正面
+		requestAnimationFrame(function () { el.classList.add('is-open'); });
+		var revealT = setTimeout(function () { card.classList.remove('is-back'); el.classList.add('is-revealed'); }, reduce ? 150 : 1100);
+
+		function tilt(x, y) {
+			card.style.setProperty('--mx', (x * 100).toFixed(1) + '%');
+			card.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+			if (!reduce) {
+				card.style.setProperty('--ry', ((x - 0.5) * 24).toFixed(2) + 'deg');
+				card.style.setProperty('--rx', ((0.5 - y) * 24).toFixed(2) + 'deg');
+			}
+		}
+		card.addEventListener('pointermove', function (e) {
+			var r = card.getBoundingClientRect();
+			card.classList.add('is-hover');
+			tilt(Math.min(1, Math.max(0, (e.clientX - r.left) / r.width)), Math.min(1, Math.max(0, (e.clientY - r.top) / r.height)));
+		});
+		card.addEventListener('pointerleave', function () {
+			card.classList.remove('is-hover');
+			['--mx', '--my', '--rx', '--ry'].forEach(function (k) { card.style.removeProperty(k); });
+		});
+		card.addEventListener('click', function () {
+			if (!el.classList.contains('is-revealed')) return;
+			card.classList.toggle('is-back');
+		});
+
+		function close() {
+			clearTimeout(revealT);
+			document.removeEventListener('keydown', onKey);
+			el.classList.remove('is-open');
+			root.classList.remove('is-locked');
+			setTimeout(function () { el.remove(); }, reduce ? 0 : 280);
+			if (opener) opener.focus({ preventScroll: true });
+		}
+		function onKey(e) { if (e.key === 'Escape') close(); }
+		document.addEventListener('keydown', onKey);
+		$('.ce-close', el).addEventListener('click', close);
+		el.addEventListener('click', function (e) { if (e.target === el || e.target.classList.contains('ce-rays') || e.target.classList.contains('ce-hint')) close(); });
+		$('.ce-close', el).focus({ preventScroll: true });
+	}
+
+	function toast(msg) {
+		var el = $('.toast');
+		if (!el) { el = document.createElement('div'); el.className = 'toast'; el.setAttribute('role', 'status'); document.body.appendChild(el); }
+		el.textContent = msg;
+		el.classList.remove('is-on'); void el.offsetWidth; el.classList.add('is-on');
+		clearTimeout(el._t); el._t = setTimeout(function () { el.classList.remove('is-on'); }, 4200);
 	}
 
 	/* =========================================================
@@ -867,6 +1007,7 @@
 				render(false);
 				checkCv();
 				initCipher();
+				initCardEgg();
 			});
 		window.addEventListener('hashchange', function () { render(true); });
 	}

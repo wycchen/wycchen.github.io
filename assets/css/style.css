@@ -598,3 +598,139 @@ details[open] .caret { transform: rotate(180deg); }
 .btn-primary:hover i { color: #fff; }
 .btn.is-disabled { opacity: 0.45; pointer-events: none; }
 .c-cv p { margin: 0 0 14px; color: var(--muted); font-size: 0.9rem; }
+
+/* ---------- Course videos ---------- */
+
+.videos { margin-top: 28px; }
+.videos .bento-title { display: flex; align-items: center; gap: 8px; }
+.videos .bento-title i { color: var(--cyan-ink); }
+.videos .card + .card { margin-top: 12px; }
+.video-list ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.video-list a {
+	display: inline-flex; align-items: center; height: 34px; padding: 0 13px;
+	border: 1px solid var(--line-2); border-radius: var(--r-sm);
+	font: 600 0.84rem var(--mono); color: var(--ink);
+}
+.video-list a:hover { border-color: var(--primary); color: var(--primary); text-decoration: none; }
+
+/* ---------- Toast（彩蛋提示） ---------- */
+
+.toast {
+	position: fixed; left: 50%; bottom: 28px; z-index: 50; max-width: calc(100vw - 32px);
+	transform: translate(-50%, 12px); opacity: 0; pointer-events: none;
+	background: var(--panel); color: var(--panel-text); border: 1px solid var(--panel-line);
+	border-radius: 999px; padding: 10px 18px; box-shadow: var(--shadow-sm);
+	font: 600 0.86rem var(--mono); transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---------- 彩蛋：Group Meet 抽卡 ---------- */
+
+html.is-locked { overflow: hidden; }
+.card-egg {
+	--cw: min(86vw, calc(78vh * 2 / 3), 420px);
+	position: fixed; inset: 0; z-index: 60;
+	display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+	padding: 16px; background: rgba(5, 8, 24, 0.82); backdrop-filter: blur(6px);
+	opacity: 0; transition: opacity 0.28s ease; perspective: 1400px;
+}
+.card-egg.is-open { opacity: 1; }
+.ce-rays {
+	position: absolute; left: 50%; top: 50%; width: 160vmax; height: 160vmax; margin: -80vmax 0 0 -80vmax;
+	background: repeating-conic-gradient(from 0deg, rgba(255, 170, 60, 0.16) 0 6deg, transparent 6deg 18deg);
+	-webkit-mask: radial-gradient(circle, #000 0, transparent 55%); mask: radial-gradient(circle, #000 0, transparent 55%);
+	opacity: 0; transform: scale(0.6); transition: opacity 0.6s ease, transform 0.8s ease;
+	animation: ce-spin 40s linear infinite;
+}
+.card-egg.is-revealed .ce-rays { opacity: 1; transform: scale(1); }
+@keyframes ce-spin { to { rotate: 360deg; } }
+
+.ce-card {
+	--rx: 0deg; --ry: 0deg; --mx: 50%; --my: 50%;
+	position: relative; width: var(--cw); aspect-ratio: 2 / 3; padding: 0; border: 0; background: none; cursor: pointer;
+	transform: rotateX(var(--rx)) rotateY(var(--ry)); transform-style: preserve-3d;
+	transition: transform 0.4s ease;
+	animation: ce-draw 1.05s cubic-bezier(0.2, 0.9, 0.25, 1.15) both;
+}
+.ce-card.is-hover { transition: transform 0.08s linear; }
+.ce-card:focus-visible { outline: 3px solid var(--cyan); outline-offset: 6px; border-radius: 22px; }
+@keyframes ce-draw {
+	0% { translate: 0 70vh; scale: 0.35; rotate: -18deg; }
+	55% { translate: 0 -4vh; scale: 1.06; rotate: 4deg; }
+	100% { translate: 0 0; scale: 1; rotate: 0deg; }
+}
+.ce-flip {
+	position: absolute; inset: 0; display: block; transform-style: preserve-3d;
+	transition: transform 0.75s cubic-bezier(0.3, 1.4, 0.5, 1);
+}
+.ce-card.is-back .ce-flip { transform: rotateY(180deg); }
+.ce-face {
+	position: absolute; inset: 0; display: block; overflow: hidden; border-radius: 4.5% / 3%;
+	backface-visibility: hidden; -webkit-backface-visibility: hidden;
+	box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.ce-front img { width: 100%; height: 100%; object-fit: cover; display: block; user-select: none; }
+.card-egg.is-revealed .ce-front { box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8), 0 0 60px -6px rgba(255, 120, 40, 0.75); }
+
+/* 卡背 */
+.ce-back {
+	transform: rotateY(180deg);
+	display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6%;
+	background:
+		radial-gradient(circle at 50% 45%, rgba(56, 189, 248, 0.35), transparent 55%),
+		repeating-linear-gradient(45deg, rgba(120, 150, 255, 0.07) 0 2px, transparent 2px 12px),
+		linear-gradient(160deg, #142060, #0a0f2e 60%, #050818);
+	border: calc(var(--cw) * 0.045) solid #c9cfe6;
+	box-shadow: inset 0 0 0 2px #7d88b8, 0 30px 60px -20px rgba(0, 0, 0, 0.8);
+	color: #e7ecff;
+}
+.ce-back-ring {
+	display: grid; place-items: center; width: 62%; aspect-ratio: 1; border-radius: 50%;
+	border: calc(var(--cw) * 0.012) solid rgba(231, 236, 255, 0.85); background: radial-gradient(circle, rgba(26, 86, 219, 0.55), rgba(10, 15, 46, 0.2) 70%);
+	box-shadow: 0 0 40px rgba(56, 189, 248, 0.45), inset 0 0 24px rgba(0, 0, 0, 0.5);
+}
+/* Logo 原檔是黑色線稿，反相成白色放在深色卡背上 */
+.ce-back-ring img { width: 74%; filter: invert(1) drop-shadow(0 0 6px rgba(56, 189, 248, 0.6)); user-select: none; }
+.ce-back-name { width: 58%; filter: invert(1); user-select: none; }
+.ce-back-hex { font: 500 calc(var(--cw) * 0.03) var(--mono); letter-spacing: 0.08em; color: rgb(var(--cipher-hi)); }
+
+/* 閃卡：全息彩虹 + 跟著指標的反光 */
+.ce-holo, .ce-glare { position: absolute; inset: 0; pointer-events: none; border-radius: inherit; }
+.ce-holo {
+	background:
+		repeating-linear-gradient(115deg, #ff5f6d 0%, #ffc371 6%, #a8ff78 12%, #3ad6ff 18%, #b06bff 24%, #ff5f6d 30%),
+		radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.5), transparent 60%);
+	background-size: 300% 300%, 100% 100%;
+	background-position: var(--mx) var(--my), center;
+	mix-blend-mode: color-dodge; opacity: 0.12;
+	animation: ce-holo 5s linear infinite;
+}
+.ce-card.is-hover .ce-holo { animation: none; opacity: 0.2; }
+@keyframes ce-holo {
+	0% { background-position: 0% 0%, center; }
+	50% { background-position: 100% 100%, center; }
+	100% { background-position: 0% 0%, center; }
+}
+.ce-glare {
+	background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.55) 48%, transparent 60%);
+	background-size: 250% 100%; mix-blend-mode: overlay;
+	animation: ce-glare 3.2s ease-in-out infinite;
+}
+.ce-card.is-hover .ce-glare {
+	animation: none;
+	background: radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.65), transparent 42%);
+}
+@keyframes ce-glare { 0%, 15% { background-position: 120% 0; } 70%, 100% { background-position: -20% 0; } }
+
+.ce-hint { position: relative; margin: 0; font: 500 0.82rem var(--mono); color: rgba(231, 236, 255, 0.7); text-align: center; }
+.ce-close {
+	position: absolute; top: 16px; right: 16px; width: 42px; height: 42px; border-radius: 50%;
+	display: grid; place-items: center; cursor: pointer;
+	border: 1px solid rgba(231, 236, 255, 0.25); background: rgba(10, 15, 46, 0.7); color: #e7ecff; font-size: 1.1rem;
+}
+.ce-close:hover { border-color: var(--cyan); color: var(--cyan); }
+
+@media (prefers-reduced-motion: reduce) {
+	.ce-card, .ce-rays, .ce-holo, .ce-glare { animation: none; }
+	.ce-flip, .ce-card { transition: none; }
+}
