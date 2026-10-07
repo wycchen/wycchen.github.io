@@ -1,26 +1,40 @@
 <!--
 歷年課程。格式：## 學年度（西元），底下「- 學期 | 課程名稱 | 修課對象 | 開課學校」
 「## Ongoing」放目前固定開設的課程。
-標示「Test」的是示範資料，請改成實際開課紀錄。
 -->
 
 ## Ongoing
-- Fall | Cryptography | Graduate | Taipei Tech
-- Fall | Introduction to Computer Science | Undergraduate | Taipei Tech
-- Spring | Privacy-Preserving and Secure Computation | Graduate | Taipei Tech
-- Spring | Blockchain Techniques and Applications | Undergraduate & Graduate | Taipei Tech
-- Spring | Cryptography Design and Analysis | Graduate | NTHU
+- Fall | Cryptography | Graduate | National Taipei University of Technology
+- Fall | Introduction to Computer Science | Undergraduate | National Taipei University of Technology
+- Spring | Privacy-Preserving and Secure Computation | Graduate | National Taipei University of Technology
+- Spring | Blockchain Techniques and Applications | Undergraduate & Graduate | National Taipei University of Technology
+- Spring | Cryptography Design and Analysis | Graduate | National Tsing Hua University
+
+## 2026
+- Fall | Cryptography | Graduate | National Taipei University of Technology
+- Fall | Introduction to Computer Science | Undergraduate | National Taipei University of Technology
+
+## 2025
+- Fall | Cryptography | Graduate | National Taipei University of Technology
+- Fall | Introduction to Computer Science | Undergraduate | National Taipei University of Technology
+- Fall | Introduction to University Life and Engineering Ethics | Undergraduate | National Taipei University of Technology
+- Spring | Privacy-Preserving and Secure Computation | Graduate | National Taipei University of Technology
+- Spring | Information Security | EMBA | National Taipei University of Technology
 
 ## 2024
-- Fall | Test Course 1 | Graduate | Taipei Tech
-- Spring | Test Course 2 | Undergraduate | Taipei Tech
+- Fall | Cryptography | Graduate | National Taipei University of Technology
+- Fall | Introduction to Computer Science | Undergraduate | National Taipei University of Technology
+- Spring | Blockchain Techniques and Applications | Undergraduate & Graduate | National Taipei University of Technology
+- Spring | Privacy-Preserving and Secure Computation | Graduate | National Taipei University of Technology
 
 ## 2023
-- Fall | Test Course 3 | Graduate | Taipei Tech
+- Fall | Cryptography | Graduate | National Taipei University of Technology
+- Fall | Introduction to Computer Science | Undergraduate | National Taipei University of Technology
+- Spring | Blockchain Techniques and Applications | Undergraduate & Graduate | National Taipei University of Technology
+- Spring | Privacy-Preserving and Secure Computation | Graduate | National Taipei University of Technology
 
-## 2021
-- Fall | Test Course 4 | Undergraduate | Yuan Ze University
-- Spring | Test Course 5 | Graduate | Yuan Ze University
-
-## 2019
-- Fall | Test Course 6 | Undergraduate | Yuan Ze University
+## 2022
+- Fall | Cryptography | Graduate | National Taipei University of Technology
+- Fall | Network Security and Penetration Testing | Undergraduate & Graduate | National Taipei University of Technology
+- Spring | Blockchain Techniques and Applications | Undergraduate & Graduate | National Taipei University of Technology
+- Spring | Privacy-Preserving and Secure Computation | Graduate | National Taipei University of Technology
