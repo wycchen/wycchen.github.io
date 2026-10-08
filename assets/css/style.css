@@ -116,6 +116,13 @@ html[data-theme="dark"] .profile { border-right: 1px solid var(--line); }
 	width: 128px; height: 128px; object-fit: cover; object-position: 50% 28%;
 	border-radius: 30px; box-shadow: 0 0 0 1px var(--panel-line), 0 0 0 5px rgba(56, 189, 248, 0.14);
 }
+.profile-photo { position: relative; }
+.profile-photo .photo-alt {
+	position: absolute; left: 0; top: 0; object-position: 50% 35%;
+	opacity: 0; transform: scale(0.94); pointer-events: none;
+	transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.profile-photo.is-alt .photo-alt { opacity: 1; transform: none; }
 
 .profile-name { color: #fff; font-size: 1.95rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; }
 html[data-lang="zh"] .profile-name, html[data-lang="ja"] .profile-name { letter-spacing: 0.06em; }

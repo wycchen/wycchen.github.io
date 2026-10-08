@@ -943,6 +943,42 @@
 	}
 
 	/* =========================================================
+	 * 頭像：偶爾隨機換成其他照片（site.md 的 photo_alt，連同主照片最多 5 張），幾秒後換回來
+	 * ========================================================= */
+	var PHOTO_MAX = 5;
+	function initPhotoShuffle() {
+		var link = $('.profile-photo');
+		var alts = String(site.photo_alt || '').split('|').map(function (s) { return s.trim(); })
+			.filter(Boolean).slice(0, PHOTO_MAX - 1);
+		if (!link || !alts.length) return;
+		if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+		var alt = document.createElement('img');
+		alt.className = 'photo-alt';
+		alt.alt = '';
+		alt.setAttribute('aria-hidden', 'true');
+		alt.draggable = false;
+		link.appendChild(alt);
+		var last = -1;
+		function rand(a, b) { return a + Math.random() * (b - a); }
+		function next() { setTimeout(swap, rand(9000, 20000)); }
+		function swap() {
+			if (document.hidden) return next();
+			var i = alts.length > 1 ? Math.floor(Math.random() * alts.length) : 0;
+			if (alts.length > 1 && i === last) i = (i + 1) % alts.length;
+			last = i;
+			var pic = new Image();
+			pic.onload = function () {
+				alt.src = alts[i];
+				link.classList.add('is-alt');
+				setTimeout(function () { link.classList.remove('is-alt'); next(); }, rand(3500, 6000));
+			};
+			pic.onerror = next;
+			pic.src = alts[i];
+		}
+		next();
+	}
+
+	/* =========================================================
 	 * 彩蛋：連點頭像三下，像抽卡一樣抽出「明天要 Group Meet」卡
 	 * 卡片會閃（全息反光，滑鼠／手指移動時跟著傾斜），點卡片可翻面
 	 * ========================================================= */
@@ -1046,6 +1082,7 @@
 				checkCv();
 				initCipher();
 				initCardEgg();
+				initPhotoShuffle();
 			});
 		window.addEventListener('hashchange', function () { render(true); });
 	}

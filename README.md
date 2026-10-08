@@ -29,6 +29,7 @@
 | 內容 | 檔案 |
 | --- | --- |
 | 姓名、職稱、信箱、研究室、CV、學術連結、研究標籤 | `content/site.md` |
+| 頭像與隨機替換照片（`photo`、`photo_alt`，最多共 5 張） | `content/site.md`，照片放 `images/` |
 | 關於 | `content/{en,zh,ja}/about.md` |
 | 研究領域卡片 | `content/{en,zh,ja}/research.md` |
 | 學歷／經歷 | `content/{en,zh,ja}/education.md`、`experience.md` |
