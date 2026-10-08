@@ -18,6 +18,8 @@ univ_short_zh: 北科大
 univ_short_ja: 台北科技大学
 univ_url: https://www.ntut.edu.tw/
 photo: images/photo_YC.jpg
+# 頭像偶爾會隨機換成下面的照片（最多 4 張，連同 photo 共 5 張），以 | 分隔；留空就不換
+photo_alt: images/photo_alt_1.jpg
 
 email: wycchen@ntut.edu.tw
 email_alt: wycchen@ieee.org
