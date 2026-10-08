@@ -3,7 +3,7 @@
 - 左側深藍個人檔案欄（手機版移到頂端）＋右側分頁：總覽／課程／公告／聯絡
 - 著作、計畫、榮譽不放在分頁列，改由總覽的「精選成果」區塊進入，頁面標示「精選」
 - 中／英／日三語、淺色／深色模式（預設淺色）、RWD
-- 著作、計畫、榮譽、課程、公告都能依「近 3 年／近 5 年／全部／自訂期間」篩選；著作另可依類型篩選
+- 著作、計畫、榮譽、課程、公告都能依「近 3 年／近 5 年／全部／自訂期間」篩選；著作另可依類型篩選；課程的「自訂」可選到上／下學期（依每行第一欄的「上學期／下學期」或 Fall／Spring 判斷）
 - 總覽最多顯示 5 則最新消息，其餘到「公告」頁看
 - 圖示：[Font Awesome](https://fontawesome.com/) Free 7（放在 `assets/vendor/`，不依賴外部 CDN）
 
@@ -101,26 +101,21 @@ python tools/dblp2md.py --no-preprints               # 不含 arXiv / ePrint
    ```markdown
    ---
    date: 2026-11-02
-   title: Paper accepted to IEEE TIFS
-   title_zh: 論文獲 IEEE TIFS 接受
-   title_ja: IEEE TIFS に論文が採録されました
+   title: 論文獲 IEEE TIFS 接受
    pinned: false
    ---
 
-   English content (Markdown)
-
-   <!-- zh -->
-
-   中文內容（Markdown）
-
-   <!-- ja -->
-
-   日本語の本文（Markdown）
+   公告內容（Markdown）
    ```
 
 3. 在 `news/index.md` 加一行 `- [檔名.md](檔名.md)`，commit & push
 
-`pinned: true` 會置頂；缺少的語言會改用英文（再退回中文）。要下架，從 `news/index.md` 刪掉那行即可。
+**公告圖片**（讀者點圖片會以彈窗放大）：
+
+- 本機圖片：放到 `news/images/`，內文寫 `![說明](images/檔名.jpg)`
+- 網路圖片：直接貼網址 `![說明](https://example.com/photo.jpg)`。有些網站禁止外部引用圖片（例如 Wikimedia），顯示不出來時請下載後改放 `news/images/`
+
+公告只寫中文；切到英文或日文介面時，公告內容一樣顯示中文。`pinned: true` 會置頂。要下架，從 `news/index.md` 刪掉那行即可。
 
 ## 介面文字與配色
 

@@ -24,7 +24,7 @@
 			'ui.cv': 'Download CV', 'ui.cvMissing': 'CV not uploaded yet', 'ui.email': 'Email',
 			'ui.loading': 'Loading…', 'ui.loadError': 'This content could not be loaded.',
 			'ui.localHint': 'Previewing from a local file? Run a local server (see README).',
-			'egg.cardAlt': 'Legendary card: Yu-Chi Chen, “Group Meet Tomorrow”', 'egg.cardHint': 'Tap the card to flip · Esc to close', 'ui.close': 'Close', 'egg.decrypted': 'Decrypted: “Cryptography”. You cracked the hex! 🔓', 'ui.ongoing': 'Ongoing', 'ui.present': 'present', 'ui.pinned': 'Pinned',
+			'egg.cardAlt': 'Legendary card: Yu-Chi Chen, “Group Meet Tomorrow”', 'egg.cardHint': 'Tap the card to flip · Esc to close', 'ui.close': 'Close', 'egg.decrypted': 'Decrypted: “Cryptography”. You cracked the hex! 🔓', 'ui.ongoing': 'Ongoing', 'ui.present': 'present', 'ui.pinned': 'Pinned', 'ui.close': 'Close',
 			'ui.allNews': 'All announcements', 'ui.noNews': 'No announcements yet.',
 			'ui.notFound': 'This page does not exist.', 'ui.home': 'Back to overview',
 			'sec.about': 'About', 'sec.research': 'Research', 'sec.news': 'Latest news',
@@ -43,6 +43,7 @@
 			'period.custom': 'Custom', 'period.from': 'From', 'period.to': 'To',
 			'period.count': '{n} of {total}', 'period.range': '{from}–{to}',
 			'period.empty': 'Nothing between {from} and {to}.', 'period.showAll': 'Show all',
+			'term.1': 'AY {y} Fall', 'term.2': 'AY {y} Spring',
 			'type.all': 'All', 'type.J': 'Journal', 'type.C': 'Conference', 'type.W': 'Workshop',
 			'type.B': 'Book', 'type.P': 'Patent', 'type.R': 'Preprint', 'type.T': 'Thesis',
 			'contact.email': 'Email', 'contact.office': 'Office', 'contact.address': 'Address',
@@ -60,7 +61,7 @@
 			'ui.cv': '下載履歷', 'ui.cvMissing': '履歷尚未上傳', 'ui.email': '寄信',
 			'ui.loading': '載入中…', 'ui.loadError': '內容載入失敗。',
 			'ui.localHint': '若直接開啟本機檔案，請改用本機伺服器預覽（見 README）。',
-			'egg.cardAlt': '傳說級卡片：陳昱圻「明天要 Group Meet」', 'egg.cardHint': '點卡片翻面 · 按 Esc 關閉', 'ui.close': '關閉', 'egg.decrypted': '解密成功：「Cryptography」，你破解了這串十六進位！🔓', 'ui.ongoing': '進行中', 'ui.present': '至今', 'ui.pinned': '置頂',
+			'egg.cardAlt': '傳說級卡片：陳昱圻「明天要 Group Meet」', 'egg.cardHint': '點卡片翻面 · 按 Esc 關閉', 'ui.close': '關閉', 'egg.decrypted': '解密成功：「Cryptography」，你破解了這串十六進位！🔓', 'ui.ongoing': '進行中', 'ui.present': '至今', 'ui.pinned': '置頂', 'ui.close': '關閉',
 			'ui.allNews': '全部公告', 'ui.noNews': '目前沒有公告。',
 			'ui.notFound': '找不到這個頁面。', 'ui.home': '回到總覽',
 			'sec.about': '關於', 'sec.research': '研究領域', 'sec.news': '最新消息',
@@ -78,7 +79,8 @@
 			'period.label': '期間', 'period.3': '近 3 年', 'period.5': '近 5 年', 'period.all': '全部',
 			'period.custom': '自訂', 'period.from': '從', 'period.to': '到',
 			'period.count': '{n} / {total} 筆', 'period.range': '{from}–{to}',
-			'period.empty': '{from}–{to} 年間沒有資料。', 'period.showAll': '顯示全部',
+			'period.empty': '{from}–{to} 沒有資料。', 'period.showAll': '顯示全部',
+			'term.1': '{y} 上學期', 'term.2': '{y} 下學期',
 			'type.all': '全部', 'type.J': '期刊', 'type.C': '研討會', 'type.W': '工作坊',
 			'type.B': '專書', 'type.P': '專利', 'type.R': '預印本', 'type.T': '學位論文',
 			'contact.email': '電子郵件', 'contact.office': '研究室', 'contact.address': '地址',
@@ -96,7 +98,7 @@
 			'ui.cv': '履歴書をダウンロード', 'ui.cvMissing': '履歴書は未掲載です', 'ui.email': 'メール',
 			'ui.loading': '読み込み中…', 'ui.loadError': 'コンテンツを読み込めませんでした。',
 			'ui.localHint': 'ローカルファイルを直接開いている場合は、ローカルサーバーでプレビューしてください（README 参照）。',
-			'egg.cardAlt': 'レジェンドカード：陳昱圻「明日は Group Meet」', 'egg.cardHint': 'カードをタップで裏返す · Esc で閉じる', 'ui.close': '閉じる', 'egg.decrypted': '復号成功：「Cryptography」。16 進数を解読しました！🔓', 'ui.ongoing': '進行中', 'ui.present': '現在', 'ui.pinned': '固定',
+			'egg.cardAlt': 'レジェンドカード：陳昱圻「明日は Group Meet」', 'egg.cardHint': 'カードをタップで裏返す · Esc で閉じる', 'ui.close': '閉じる', 'egg.decrypted': '復号成功：「Cryptography」。16 進数を解読しました！🔓', 'ui.ongoing': '進行中', 'ui.present': '現在', 'ui.pinned': '固定', 'ui.close': '閉じる',
 			'ui.allNews': 'すべてのお知らせ', 'ui.noNews': 'お知らせはまだありません。',
 			'ui.notFound': 'このページは存在しません。', 'ui.home': '概要に戻る',
 			'sec.about': 'プロフィール', 'sec.research': '研究分野', 'sec.news': '最新情報',
@@ -114,7 +116,8 @@
 			'period.label': '期間', 'period.3': '直近3年', 'period.5': '直近5年', 'period.all': 'すべて',
 			'period.custom': '期間指定', 'period.from': '開始', 'period.to': '終了',
 			'period.count': '{n} / {total} 件', 'period.range': '{from}–{to}',
-			'period.empty': '{from}–{to} 年の該当項目はありません。', 'period.showAll': 'すべて表示',
+			'period.empty': '{from}–{to} の該当項目はありません。', 'period.showAll': 'すべて表示',
+			'term.1': '{y}年度 秋学期', 'term.2': '{y}年度 春学期',
 			'type.all': 'すべて', 'type.J': '論文誌', 'type.C': '国際会議', 'type.W': 'ワークショップ',
 			'type.B': '書籍', 'type.P': '特許', 'type.R': 'プレプリント', 'type.T': '学位論文',
 			'contact.email': 'メール', 'contact.office': '研究室', 'contact.address': '住所',
@@ -165,6 +168,13 @@
 		});
 	}
 	function md(src) { return src ? (window.marked ? window.marked.parse(src) : '<p>' + esc(src) + '</p>') : ''; }
+	// 公告內文：相對路徑的圖片以 news/ 為基準（例如 images/xxx.jpg → news/images/xxx.jpg），網址圖片照原樣
+	function newsMd(src) {
+		return md(src).replace(/<img\b([^>]*?)\ssrc="([^"]*)"([^>]*)>/g, function (_, pre, url, post) {
+			if (url && !/^(?:[a-z][a-z\d+.-]*:|\/|#)/i.test(url)) url = 'news/' + url.replace(/^\.\//, '');
+			return '<img' + pre + ' src="' + url + '"' + post + ' loading="lazy" decoding="async">';
+		});
+	}
 	function mdInline(src) { return src ? (window.marked ? window.marked.parseInline(src) : esc(src)) : ''; }
 	function stripComments(src) { return src.replace(/<!--[\s\S]*?-->/g, ''); }
 
@@ -318,17 +328,8 @@
 			return Promise.all(files.map(function (f) {
 				return fetchText('news/' + f).then(function (raw) {
 					var p = parseFrontMatter(raw);
-					// 內文以 <!-- zh -->、<!-- ja --> 分段；缺的語言用英文（再退回中文）
-					var parts = { en: '' }, key = 'en';
-					p.body.split(/^\s*<!--\s*(zh|ja)\s*-->\s*$/m).forEach(function (seg, i) {
-						if (i % 2) key = seg; else parts[key] = seg.trim();
-					});
-					var title = {}, body = {};
-					LANGS.forEach(function (l) {
-						title[l] = p.meta['title_' + l] || p.meta.title || p.meta.title_zh || f;
-						body[l] = parts[l] || parts.en || parts.zh || '';
-					});
-					title.en = p.meta.title || p.meta.title_zh || f;
+					// 公告只寫中文，三種語言介面都顯示同一份內容
+					var title = p.meta.title || f, body = p.body.trim();
 					var date = p.meta.date || (f.match(/^\d{4}-\d{2}-\d{2}/) || [''])[0];
 					return {
 						slug: f.replace(/\.md$/, ''), date: date, year: +date.slice(0, 4),
@@ -361,17 +362,35 @@
 		return d === '3' || d === '5' ? d : 'all';
 	}
 	function getFilter(key, minYear) {
-		if (!filters[key]) filters[key] = { mode: key === 'news' ? 'all' : defaultMode(), from: Math.max(minYear, NOW_YEAR - 4), to: NOW_YEAR, type: 'all' };
+		if (!filters[key]) {
+			var from = Math.max(minYear, NOW_YEAR - 4);
+			filters[key] = { mode: key === 'news' ? 'all' : defaultMode(), from: from, to: NOW_YEAR, type: 'all',
+				semFrom: semKey(from, 1), semTo: semKey(NOW_YEAR, 2) };
+		}
 		return filters[key];
 	}
-	function periodRange(st, minYear) {
+	function periodRange(st, minYear, sem) {
 		if (st.mode === '3') return [NOW_YEAR - 2, NOW_YEAR];
 		if (st.mode === '5') return [NOW_YEAR - 4, NOW_YEAR];
+		if (st.mode === 'custom' && sem) return semRange(st).map(function (k) { return Math.floor(k / 2); });
 		if (st.mode === 'custom') return [Math.min(st.from, st.to), Math.max(st.from, st.to)];
 		return [minYear, NOW_YEAR];
 	}
 
-	function filterBar(key, minYear, types) {
+	/*
+	 * 課程的自訂期間以學期為單位。「## 2025」是學年度：上學期（秋）在前、下學期（春）在後。
+	 * 學期序號 = 學年度 × 2 + (上學期 0／下學期 1)，方便比大小。
+	 */
+	function semKey(year, half) { return year * 2 + (half - 1); }
+	function semRange(st) { return [Math.min(st.semFrom, st.semTo), Math.max(st.semFrom, st.semTo)]; }
+	function semLabel(k) { return t('term.' + (k % 2 + 1), { y: Math.floor(k / 2) }); }
+	function termHalf(s) {
+		if (/上|秋|fall|autumn|first|1st/i.test(s)) return 1;
+		if (/下|春|spring|second|2nd/i.test(s)) return 2;
+		return 0;
+	}
+
+	function filterBar(key, minYear, types, sem) {
 		var st = filters[key];
 		var h = '<div class="filter"><div class="seg" role="group" aria-label="' + esc(t('period.label')) + '">';
 		['3', '5', 'all', 'custom'].forEach(function (m) {
@@ -382,13 +401,21 @@
 		if (st.mode === 'custom') {
 			var opts = function (sel) {
 				var o = '';
-				for (var y = NOW_YEAR; y >= minYear; y--) o += '<option value="' + y + '"' + (y === sel ? ' selected' : '') + '>' + y + '</option>';
+				for (var y = NOW_YEAR; y >= minYear; y--) {
+					if (sem) {
+						[2, 1].forEach(function (half) {
+							var k = semKey(y, half);
+							o += '<option value="' + k + '"' + (k === sel ? ' selected' : '') + '>' + esc(semLabel(k)) + '</option>';
+						});
+					} else o += '<option value="' + y + '"' + (y === sel ? ' selected' : '') + '>' + y + '</option>';
+				}
 				return o;
 			};
+			var kf = sem ? 'semFrom' : 'from', kt = sem ? 'semTo' : 'to';
 			h += '<div class="range">' +
-				'<label><span>' + esc(t('period.from')) + '</span><select data-k="from">' + opts(st.from) + '</select></label>' +
+				'<label><span>' + esc(t('period.from')) + '</span><select data-k="' + kf + '">' + opts(st[kf]) + '</select></label>' +
 				'<span class="range-dash" aria-hidden="true">–</span>' +
-				'<label><span>' + esc(t('period.to')) + '</span><select data-k="to">' + opts(st.to) + '</select></label></div>';
+				'<label><span>' + esc(t('period.to')) + '</span><select data-k="' + kt + '">' + opts(st[kt]) + '</select></label></div>';
 		}
 		h += '</div>';
 		if (types && types.length > 1) {
@@ -467,14 +494,22 @@
 			types.sort(function (a, b) { return TYPE_ORDER.indexOf(a) - TYPE_ORDER.indexOf(b); });
 			getFilter(name, minYear);
 
+			// 課程：自訂期間可選到上／下學期
+			var sem = name === 'teaching';
 			function draw(focusSel) {
-				var st = filters[name], r = periodRange(st, minYear);
+				var st = filters[name], r = periodRange(st, minYear, sem);
+				var bySem = sem && st.mode === 'custom', sr = bySem ? semRange(st) : null;
 				var total = 0, shown = 0, groups = '';
 				blocks.forEach(function (b) {
 					var inRange = isNaN(b.start) || (b.end >= r[0] && b.start <= r[1]);
 					var items = b.items.filter(function (i) {
 						total++;
-						return inRange && (st.type === 'all' || i.type === st.type);
+						if (!inRange || (st.type !== 'all' && i.type !== st.type)) return false;
+						// 「進行中」與沒寫學期的課只看年份
+						var half = bySem && !b.named && !isNaN(b.start) ? termHalf(i.fields[0] || '') : 0;
+						if (!half) return true;
+						var k = semKey(b.start, half);
+						return k >= sr[0] && k <= sr[1];
 					});
 					if (!items.length) return;
 					shown += items.length;
@@ -482,9 +517,9 @@
 						'<h3 class="yr-label"><span>' + esc(rangeLabel(b)) + '</span><em>' + items.length + '</em></h3>' +
 						'<ul class="yr-items list-' + name + '">' + items.map(RENDER[name]).join('') + '</ul></section>';
 				});
-				el.innerHTML = '<div class="toolbar">' + filterBar(name, minYear, name === 'publications' ? types : null) +
+				el.innerHTML = '<div class="toolbar">' + filterBar(name, minYear, name === 'publications' ? types : null, sem) +
 					'<span class="count">' + esc(t('period.count', { n: shown, total: total })) + '</span></div>' +
-					(shown ? '<div class="years">' + groups + '</div>' : emptyBox(r));
+					(shown ? '<div class="years">' + groups + '</div>' : emptyBox(bySem ? sr.map(semLabel) : r));
 				externalLinks(el);
 				bindFilter(el, name, draw);
 				if (focusSel) { var f = $(focusSel, el); if (f) f.focus({ preventScroll: true }); }
@@ -548,7 +583,7 @@
 				el.innerHTML = '<ol class="news-mini">' + list.slice(0, HOME_NEWS_LIMIT).map(function (n) {
 					return '<li><a href="#/news/' + encodeURIComponent(n.slug) + '">' +
 						'<time datetime="' + esc(n.date) + '">' + fmtDate(n.date) + '</time>' +
-						'<span class="nm-title">' + (n.pinned ? '<i class="fa-solid fa-thumbtack pin" aria-label="' + esc(t('ui.pinned')) + '"></i>' : '') + esc(n.title[lang()]) + '</span></a></li>';
+						'<span class="nm-title" lang="zh-Hant-TW">' + (n.pinned ? '<i class="fa-solid fa-thumbtack pin" aria-label="' + esc(t('ui.pinned')) + '"></i>' : '') + esc(n.title) + '</span></a></li>';
 				}).join('') + '</ol>';
 			}).catch(function (e) { showError($('#ov-news'), e); });
 
@@ -619,11 +654,11 @@
 								(g.key === 'pinned' ? '<i class="fa-solid fa-thumbtack" aria-hidden="true"></i> ' + esc(t('ui.pinned')) : esc(g.key)) +
 								'</span><em>' + g.items.length + '</em></h3><ul class="yr-items news-list">' +
 								g.items.map(function (n) {
-									var body = n.body[lang()];
+									var body = n.body;
 									return '<li id="n-' + esc(n.slug) + '"><details data-slug="' + esc(n.slug) + '"' + (openSet[n.slug] ? ' open' : '') + '>' +
-										'<summary><time datetime="' + esc(n.date) + '">' + fmtDate(n.date) + '</time><span class="nl-title">' + esc(n.title[lang()]) + '</span>' +
+										'<summary><time datetime="' + esc(n.date) + '">' + fmtDate(n.date) + '</time><span class="nl-title" lang="zh-Hant-TW">' + esc(n.title) + '</span>' +
 										(body ? '<i class="fa-solid fa-chevron-down caret" aria-hidden="true"></i>' : '') + '</summary>' +
-										(body ? '<div class="nl-body md">' + md(body) + '</div>' : '') + '</details></li>';
+										(body ? '<div class="nl-body md" lang="zh-Hant-TW">' + newsMd(body) + '</div>' : '') + '</details></li>';
 								}).join('') + '</ul></section>';
 						}).join('') + '</div>' : emptyBox(r));
 					externalLinks(el);
@@ -777,6 +812,28 @@
 		store('yc-lang', l);
 		applyStaticI18n(); renderProfile(); render(false);
 	}
+	// 公告圖片：點擊放大（圖片本身已經包在連結裡的就交給連結）
+	var lightbox = null;
+	function openLightbox(img) {
+		if (!lightbox) {
+			lightbox = document.createElement('dialog');
+			lightbox.className = 'lightbox';
+			lightbox.innerHTML = '<button type="button" class="lb-close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button><img alt="" />';
+			lightbox.addEventListener('click', function () { lightbox.close(); });
+			lightbox.addEventListener('close', function () { root.classList.remove('lb-open'); });
+			document.body.appendChild(lightbox);
+		}
+		$('.lb-close', lightbox).setAttribute('aria-label', t('ui.close'));
+		var big = $('img', lightbox);
+		big.src = img.currentSrc || img.src;
+		big.alt = img.alt || '';
+		root.classList.add('lb-open');
+		lightbox.showModal();
+	}
+	document.addEventListener('click', function (e) {
+		var img = e.target.closest && e.target.closest('.nl-body img');
+		if (img && !img.closest('a')) openLightbox(img);
+	});
 	document.addEventListener('click', function (e) {
 		var b = e.target.closest && e.target.closest('.js-theme, .js-lang');
 		if (!b) return;
