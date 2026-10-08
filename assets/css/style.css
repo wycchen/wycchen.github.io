@@ -131,7 +131,9 @@ html[data-lang="zh"] .profile-name, html[data-lang="ja"] .profile-name { letter-
 	border: 1px solid rgba(56, 189, 248, 0.32); border-radius: 999px; padding: 2px 10px;
 }
 
-.profile-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; margin-top: 28px; }
+.profile-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+/* 放不下（例如日文「履歴書をダウンロード」）時自動換行，不會被側欄裁掉 */
+.profile-actions .p-btn { flex: 1 1 auto; }
 .p-btn {
 	display: inline-flex; align-items: center; justify-content: center; gap: 8px;
 	height: 42px; padding: 0 16px; border-radius: var(--r-sm);
@@ -554,7 +556,11 @@ details[open] .caret { transform: rotate(180deg); }
 	.profile-photo img { width: 88px; height: 88px; border-radius: 22px; }
 	.profile-actions .p-btn { flex: 1 1 auto; }
 	.tabs a i { display: none; }
-	.tabs { -webkit-mask-image: linear-gradient(to right, #000 82%, transparent); mask-image: linear-gradient(to right, #000 82%, transparent); padding-right: 28px; }
+	/* 手機：分頁獨立一整列、平均分配寬度，四個分頁都看得到（不用橫向滑動） */
+	.tabbar { flex-wrap: wrap; row-gap: 8px; }
+	.tabs { flex: 1 0 100%; }
+	.tabs a { flex: 1 1 0; justify-content: center; padding: 7px 6px; }
+	.yr-label { top: 124px; }
 	.tool .tool-label { display: none; }
 	.tool { padding: 0; width: 40px; }
 	.tool.lang-seg { width: auto; padding: 3px; }
